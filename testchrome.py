@@ -3,6 +3,9 @@
 from selenium import webdriver
 chrome_option = webdriver.ChromeOptions()
 browser = webdriver.Chrome(options = chrome_option)
+chrome_option.add_argument('--headless')
+chrome_option.add_argument('--disable-gpu')
+
 browser.get("https://www.baidu.com")
 
 
